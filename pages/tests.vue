@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts" >
 function showMyCaptcha() {
         var container = document.querySelector("#captcha-container");
         
@@ -40,17 +40,18 @@ function showMyCaptcha() {
         console.error(error);
         /* Do something with the error */
     }
-  import { onMounted } from 'vue';
   onMounted(() => {
-    const script = document.createElement("script");
-    script.src = "https://a2e68e46b9da.ap-southeast-1.captcha-sdk.awswaf.com/a2e68e46b9da/jsapi.js";
-    script.type = "text/javascript";
-    script.defer = true;
-    script.onload = () => {
+    // const script = document.createElement("script");
+    // script.src = "https://a2e68e46b9da.ap-southeast-1.captcha-sdk.awswaf.com/a2e68e46b9da/jsapi.js";
+    // script.type = "text/javascript";
+    // script.defer = true;
+    // script.onload = () => {
         showMyCaptcha();
-    };
-    document.head.appendChild(script);
-    script.defer = true;
-    document.head.appendChild(script);
+    // };
+    // document.head.appendChild(script);
+    // script.defer = true;
+    // document.head.appendChild(script);
   });
 </script>
+
+<script type="text/javascript" src="https://a2e68e46b9da.ap-southeast-1.captcha-sdk.awswaf.com/a2e68e46b9da/jsapi.js" defer/>
