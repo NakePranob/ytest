@@ -44,6 +44,12 @@ function captchaExampleErrorFunction(error) {
   /* Do something with the error */
 }
 
+onMounted(() => {
+  showMyCaptcha();
+});
+</script>
+
+<script>
 useHead({
   script: [
     {
@@ -52,9 +58,5 @@ useHead({
       defer: true,
     },
   ]
-});
-
-onMounted(() => {
-  showMyCaptcha();
 });
 </script>
