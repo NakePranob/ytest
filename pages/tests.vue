@@ -26,7 +26,7 @@ function showMyCaptcha() {
 
 function fetchWaeather(wafToken) {
   console.log(wafToken);
-  AwsWafCaptcha.fetch("/weather", {
+  AwsWafCaptcha.fetch("/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
