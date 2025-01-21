@@ -24,7 +24,7 @@ function showMyCaptcha() {
   });
 }
 
-function fetchWaeather(wafToken: any) {
+function fetchWaeather(wafToken) {
   console.log(wafToken);
   // Use WAF token to access protected resources
   // AwsWafIntegration.fetch("/weather", {
@@ -40,17 +40,15 @@ function captchaExampleErrorFunction(error) {
   console.error(error);
   /* Do something with the error */
 }
-useHead(() => {
-  return {
+useHead({
     script: [
       {
         src: "https://a2e68e46b9da.ap-southeast-1.captcha-sdk.awswaf.com/a2e68e46b9da/jsapi.js",
         type: "text/javascript",
         defer: true,
       },
-    ],
-  };
-})
+    ]
+  })
 onMounted(() => {
   showMyCaptcha();
 });
