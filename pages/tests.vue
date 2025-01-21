@@ -12,7 +12,6 @@
 
 <script setup>
 import { onMounted } from 'vue';
-import { useHead } from '@vueuse/head';
 
 function showMyCaptcha() {
   var container = document.querySelector("#captcha-container");
