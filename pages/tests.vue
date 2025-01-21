@@ -48,15 +48,3 @@ onMounted(() => {
   showMyCaptcha();
 });
 </script>
-
-<script>
-useHead({
-  script: [
-    {
-      src: "https://a2e68e46b9da.ap-southeast-1.captcha-sdk.awswaf.com/a2e68e46b9da/jsapi.js",
-      type: "text/javascript",
-      defer: true,
-    },
-  ]
-});
-</script>
