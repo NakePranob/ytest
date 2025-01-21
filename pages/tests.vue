@@ -26,6 +26,20 @@ function showMyCaptcha() {
 
 function fetchWaeather(wafToken) {
   console.log(wafToken);
+  AwsWafCaptcha.fetch("/weather", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ city: "London" }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }
 
 function captchaExampleErrorFunction(error) {
