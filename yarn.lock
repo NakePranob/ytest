@@ -7892,9 +7892,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-app@workspace:.":
+"nuxt-apps@workspace:.":
   version: 0.0.0-use.local
-  resolution: "nuxt-app@workspace:."
+  resolution: "nuxt-apps@workspace:."
   dependencies:
     "@nuxt/eslint": "npm:^0.6.1"
     "@nuxt/fonts": "npm:^0.10.2"
