@@ -16,17 +16,6 @@ export default defineNuxtConfig({
       apiBase: process.env.NUXT_PUBLIC_API_BASE,
     },
   },
-  app: {
-    head: {
-      script: [
-        {
-          src: 'https://www.google.com/recaptcha/api.js?render=explicit',
-          type: 'text/javascript',
-          defer: true,
-        },
-      ]
-    }
-  },
   i18n: {
     strategy: "prefix",
     vueI18n: "~/i18n/i18n.config.ts",

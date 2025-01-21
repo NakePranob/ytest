@@ -12,6 +12,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
+import { useHead } from '@vueuse/head';
 
 function showMyCaptcha() {
   var container = document.querySelector("#captcha-container");
@@ -42,6 +43,16 @@ function captchaExampleErrorFunction(error) {
   console.error(error);
   /* Do something with the error */
 }
+
+useHead({
+  script: [
+    {
+      src: "https://a2e68e46b9da.ap-southeast-1.captcha-sdk.awswaf.com/a2e68e46b9da/jsapi.js",
+      type: "text/javascript",
+      defer: true,
+    },
+  ]
+});
 
 onMounted(() => {
   showMyCaptcha();
