@@ -41,6 +41,7 @@ function showMyCaptcha() {
         /* Do something with the error */
     }
   import { onMounted } from 'vue';
+  onMounted(() => {
     const script = document.createElement("script");
     script.src = "https://a2e68e46b9da.ap-southeast-1.captcha-sdk.awswaf.com/a2e68e46b9da/jsapi.js";
     script.type = "text/javascript";

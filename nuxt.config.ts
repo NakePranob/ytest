@@ -16,6 +16,7 @@ export default defineNuxtConfig({
       apiBase: process.env.NUXT_PUBLIC_API_BASE,
     },
   },
+  
   i18n: {
     strategy: "prefix",
     vueI18n: "~/i18n/i18n.config.ts",
